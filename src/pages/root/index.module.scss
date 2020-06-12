@@ -1,0 +1,134 @@
+.choose {
+  left: 600px;
+  margin-left: -150px;
+  position: absolute;
+  top: -48px;
+  width: 300px;
+}
+
+.chooseLine1 {
+  background-color: var(--color-onBackground);
+  height: 2px;
+  position: absolute;
+  left: 300px;
+  top: 18px;
+  width: 100px;
+}
+
+.chooseLine2 {
+  background-color: var(--color-onBackground);
+  height: 40px;
+  left: 400px;
+  position: absolute;
+  top: -20px;
+  width: 2px;
+}
+
+.chooseLine3 {
+  background-color: var(--color-onBackground);
+  height: 40px;
+  left: 400px;
+  position: absolute;
+  top: 18px;
+  width: 2px;
+}
+
+.chooseLine4 {
+  background-color: var(--color-onBackground);
+  height: 2px;
+  left: 400px;
+  position: absolute;
+  top: -20px;
+  width: 50px;
+}
+
+.chooseLine5 {
+  background-color: var(--color-onBackground);
+  height: 2px;
+  left: 400px;
+  position: absolute;
+  top: 56px;
+  width: 50px;
+}
+
+.container {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.join {
+  left: 1050px;
+  margin-left: -150px;
+  position: absolute;
+  top: -48px;
+  width: 300px;
+}
+
+.joinLine {
+  background-color: var(--color-onBackground);
+  height: 2px;
+  position: absolute;
+  left: 750px;
+  top: -20px;
+  width: 150px;
+}
+
+.name {
+  left: 0;
+  position: absolute;
+  top: -10px;
+  width: 300px;
+}
+
+.setup {
+  left: 50%;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  transition: margin-left 0.5s;
+
+  * {
+    transition: opacity 0.5s;
+  }
+}
+
+.setup__name {
+  margin-left: -150px;
+
+  .choose,
+  .chooseLine1,
+  .chooseLine2,
+  .chooseLine3,
+  .chooseLine4,
+  .chooseLine5,
+  .join,
+  .joinLine {
+    opacity: 0;
+  }
+}
+
+.setup__choose {
+  margin-left: -600px;
+
+  .join,
+  .joinLine {
+    opacity: 0;
+  }
+}
+
+.setup__join {
+  margin-left: -1050px;
+
+  .chooseLine3,
+  .chooseLine5 {
+    opacity: 0.25;
+  }
+}

@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-onBackground);
+  color: var(--color-onBackground);
+  font-size: 23px;
+  line-height: 1;
+  outline: none;
+  padding: 16px 32px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-hover);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.25;
+  }
+}
+
+.selected {
+  pointer-events: none;
+}

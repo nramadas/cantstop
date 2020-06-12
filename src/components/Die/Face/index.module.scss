@@ -1,0 +1,19 @@
+.inner {
+  align-self: center;
+  background-color: var(--color-background);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 95%;
+  justify-self: center;
+  width: 95%;
+}
+
+.face {
+  background-color: var(--color-onBackground);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
+}

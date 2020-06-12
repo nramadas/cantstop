@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  --color-background: #222;
+  --color-onBackground: #ffffff;
+  --color-hover: #{mix(#222, #ffffff, 90%)};
+  --color-faded: #{mix(#222, #ffffff, 70%)};
+
+  background: var(--color-background);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

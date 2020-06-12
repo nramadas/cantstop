@@ -1,0 +1,56 @@
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  height: 32px;
+}
+
+.input {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-onBackground);
+  box-sizing: border-box;
+  color: var(--color-onBackground);
+  font-size: 25px;
+  height: 59px;
+  line-height: 1;
+  outline: none;
+  padding: 8px 40px 8px 16px;
+  width: 100%;;
+
+  &:disabled {
+    padding-right: 8px;
+    pointer-events: none;
+  }
+
+  &::placeholder {
+    color: var(--color-faded);
+  }
+}
+
+.next {
+  align-items: center;
+  background-color: var(--color-onBackground);
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  fill: var(--color-background);
+  flex-direction: row;
+  height: 59px;
+  justify-content: center;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59px;
+
+  &:hover,
+  &:focus {
+    fill: var(--color-faded);
+    outline: none;
+  }
+}

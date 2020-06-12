@@ -1,0 +1,53 @@
+@mixin face($transformation) {
+  position: absolute;
+  transform: $transformation;
+}
+
+.container {
+  --face-size: 25px;
+  --negative-face-size: -25px;
+  position: relative;
+  transform: translateZ(var(--negative-face-size));
+  transform-style: preserve-3d;
+  transition: transform 0.05s;
+}
+
+.dot {
+  align-self: center;
+  background-color: var(--color-onBackground);
+  height: 32%;
+  justify-self: center;
+  transition: opacity 0.1s;
+  width: 32%;
+}
+
+.f1 {
+  @include face(rotateY(0deg) translateZ(var(--face-size)));
+}
+
+.f2 {
+  @include face(rotateY( 90deg) translateZ(var(--face-size)));
+}
+
+.f3 {
+  @include face(rotateY(180deg) translateZ(var(--face-size)));
+}
+
+.f4 {
+  @include face(rotateY(-90deg) translateZ(var(--face-size)));
+}
+
+.f5 {
+  @include face(rotateX(90deg) translateZ(var(--face-size)));
+}
+
+.f6 {
+  @include face(rotateX(-90deg) translateZ(var(--face-size)));
+}
+
+.show1 { transform: translateZ(var(--negative-face-size)) rotateY(0deg); }
+.show2 { transform: translateZ(var(--negative-face-size)) rotateY(-90deg); }
+.show3 { transform: translateZ(var(--negative-face-size)) rotateY(-180deg); }
+.show4 { transform: translateZ(var(--negative-face-size)) rotateY(90deg); }
+.show5 { transform: translateZ(var(--negative-face-size)) rotateX(-90deg); }
+.show6 { transform: translateZ(var(--negative-face-size)) rotateX(90deg); }
