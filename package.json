@@ -24,7 +24,7 @@
     "eslint-plugin-typescript": "^0.14.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
